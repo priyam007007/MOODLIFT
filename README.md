@@ -7,7 +7,7 @@ Team : SMC T-3
  - Sujay Mahalle
  - Suryakant Patwardhan
 
-#### Theme : MENTAL HEALTH AND AWARENESS
+#### Theme : EDTECH
 
 ### Title : MOODLIFT
 Our Moto :
