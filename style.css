@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+.navbar{
+    background-color:dodgerblue;
+    border-radius:30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    float: left;
+    list-style-type: none;
+    margin: 3px 7px;
+}
+.navbar li a{
+    color: white;
+    padding:2px 10px;
+    text-decoration: none;
+}
+.navbar li a:hover{
+    background-color: blue;
+    border-radius: 12px;
+}
+.content{
+    margin-top: 5px;
+    height: 900px;
+    border-radius: 44px;
+    background-color:#bdfffc;
+    background-image: url(https://images.unsplash.com/photo-1549890762-0a3f8933bc76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2035&q=80);
+    background-size: 100vw;
+}
+.box{
+    position: relative;
+    background-color:rgb(112, 153, 126);
+    height: 170px;
+    width: 300px;
+    display:inline-block;
+    border-radius: 10px;
+    padding:5px;
+    top: 100px;
+    left: 40px;
+    margin: 5px;
+}
+.button{
+    position: relative;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+    padding: .4em;
+
+}
+#button1{
+    border-radius: 5px;
+    top: 1.5em;
+
+}
+#button2{
+    border-radius: 5px;
+    top: 1.5em;
+
+
+}
+

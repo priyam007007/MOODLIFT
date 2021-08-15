@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood</title>
+    <link rel="stylesheet" href="mood.css">
+    <script type="text/javascript">
+        function myfunction()
+        {
+            var links =["https://www.youtube.com/watch?v=hlWiI4xVXKY", "https://www.youtube.com/watch?v=ZmcBC9-wAXM", "https://www.youtube.com/watch?v=d_HlPboLRL8", "https://www.youtube.com/watch?v=5qap5aO4i9A"];
+            var random = Math.floor(Math.random() * 5);
+            var mylink = links[random].trim();
+            var element = document.getElementById("link");
+            element.innerHTML = "<a href = '"+mylink+"' target='_blank'>Click Here</a>";
+        }
+    </script>
+</head>
+<body onload="myfunction()">
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mood.html">Mood</a></li>
+            <li><a href="help.html">Proffesional help</a></li>
+            <li id="feedback"><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    <section class="content">        
+        <div class="moodbox" id="dull">
+            <h1>Here are some tips that will help you uplift your mood:</h1>
+            <ul style="text-align: left;">
+                <h3>
+                    <li>The mind is like water, when it’s turbulent, it’s difficult to see. When it’s calm, everything becomes clear</li>
+                    <li>Your mind will answer most questions if you learn to relax and wait for the answer.</li>
+                    <li>Remain Calm, Serene, always in command of yourself. You will then find out how easy it is to get along</li>
+                    <li>I grind and I graft, but I will make sure that I get that time off here and there to unwind and relax and have a life.</li>
+                    <li>You don’t have to control your thoughts. You just have to stop letting them control you</li>
+                    <li>There are times when we stop, we sit still. We listen and breezes from a whole other world begin to whisper</li>
+                    
+            </h3>
+            </ul>
+        </div>
+        <div class="moodbox" style="text-align: center;">
+            <h3>Here is a link which would hep you improve your mood:<br></h3>
+            <span style="cursor: pointer;"><span id="link">Click Here</span></span>
+        </div>
+    </section>
+</body>
+</html>

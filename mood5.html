@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood</title>
+    <link rel="stylesheet" href="mood.css">
+    <script type="text/javascript">
+        function myfunction()
+        {
+            var links =["https://www.youtube.com/watch?v=7wtfhZwyrcc", "https://www.youtube.com/watch?v=j5-yKhDd64s", "https://www.youtube.com/watch?v=_Yhyp-_hX2s", "https://www.youtube.com/watch?v=ytQ5CYE1VZw", "https://www.youtube.com/watch?v=ru0K8uYEZWw"];
+            var random = Math.floor(Math.random() * 5);
+            var mylink = links[random].trim();
+            var element = document.getElementById("link");
+            element.innerHTML = "<a href = '"+mylink+"' target='_blank'>Click Here</a>";
+        }
+    </script>
+</head>
+<body onload="myfunction()">
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mood.html">Mood</a></li>
+            <li><a href="help.html">Proffesional help</a></li>
+            <li id="feedback"><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    <section class="content">        
+        <div class="moodbox" id="dull">
+            <h1>Here are some tips that will help you uplift your mood:</h1>
+            <ul style="text-align: left;">
+                <h3>
+                    <li>Stay away from negative people, they have problem for every solution.</li>
+                    <li>The sun himself is weak when he first rises, and gathers strength and courage as the day gets on</li>
+                    <li>No one is perfect - that’s why pencils have erasers.</li>
+                    <li>You’re braver than you believe, and stronger than you seem, and smarter than you think</li>
+                    <li>Keep your face to the sunshine and you cannot see a shadow.</li>
+                    <li>You are never too old to set another goal or dream a new dream.</li>                    
+            </h3>
+            </ul>
+        </div>
+        <div class="moodbox" style="text-align: center;">
+            <h3>Here is a link which would help you improve your mood:<br></h3>
+            <span style="cursor: pointer;"><span id="link">Click Here</span></span>
+        </div>
+    </section>
+</body>
+</html>

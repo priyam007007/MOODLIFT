@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood</title>
+    <link rel="stylesheet" href="mood.css">
+    <script type="text/javascript">
+        function myfunction()
+        {
+            var links =["https://www.youtube.com/watch?v=LQ7R9zHeDy8", "https://www.youtube.com/watch?v=YPlZ-nJewRE", "https://www.youtube.com/watch?v=gpk_Z7S8abQ", "https://www.youtube.com/watch?v=FM7MFYoylVs"];
+            var random = Math.floor(Math.random() * 4);
+            var mylink = links[random].trim();
+            var element = document.getElementById("link");
+            element.innerHTML = "<a href = '"+mylink+"' target='_blank'>Click Here</a>";
+        }
+    </script>
+</head>
+<body onload="myfunction()">
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mood.html">Mood</a></li>
+            <li><a href="help.html">Proffesional help</a></li>
+            <li id="feedback"><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    <section class="content">        
+        <div class="moodbox" id="dull">
+            <h1>Here are some tips that will help you enjoy your mood:</h1>
+            <ul style="text-align: left;">
+                <h3>
+                    <li>There is no path to happiness, happiness is the path</li>
+                    <li>It’s a good day to have a good day.</li>
+                    <li>Being happy never goes out of style.</li>
+                    <li>A smile is a shortest distance between two people.</li>
+                    <li>Happy people are always the beautiful.</li>                    
+            </h3>
+            </ul>
+        </div>
+        <div class="moodbox" style="text-align: center;">
+            <h3>Here is a link which would help you enhance your mood:<br></h3>
+            <span style="cursor: pointer;"><span id="link">Click Here</span></span>
+        </div>
+    </section>
+</body>
+</html>

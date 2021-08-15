@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood</title>
+    <link rel="stylesheet" href="mood.css">
+    <script type="text/javascript">
+        function myfunction()
+        {
+            var links =["https://www.youtube.com/watch?v=_u6E67vBeas", "https://www.youtube.com/watch?v=IcrbM1l_BoI", "https://www.youtube.com/watch?v=rpERSigjqXs", "https://www.youtube.com/watch?v=_FRBTakxqVA", "https://www.youtube.com/watch?v=0yRcxFHeyx4"];
+            var random = Math.floor(Math.random() * 5);
+            var mylink = links[random].trim();
+            var element = document.getElementById("link");
+            element.innerHTML = "<a href = '"+mylink+"' target='_blank'>Click Here</a>";
+        }
+    </script>
+</head>
+<body onload="myfunction()">
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mood.html">Mood</a></li>
+            <li><a href="help.html">Proffesional help</a></li>
+            <li id="feedback"><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    <section class="content">        
+        <div class="moodbox" id="dull">
+            <h1>Here are some tips that will help you uplift your mood:</h1>
+            <ul style="text-align: left;">
+                <h3>
+                <li>Tough times don’t last. But tough people do.</li>
+                <li>80% of success is in showing up.</li>
+                <li>Be stronger than your strongest excuse.</li>
+                <li>Success is not final; Failure is not fatal; It is the courage to continue that counts.</li>
+                <li>Just believe in yourself. Even you don’t, pretend you do and at some point, you will.</li>
+                <li>If your dreams don’t scare you then they are too small.</li>
+                <li>It's going to be hard,but hard does not mean impossible.</li>
+            </h3>
+            </ul>
+        </div>
+        <div class="moodbox" style="text-align: center;">
+            <h3>Here is a link which would help you improve your mood:<br></h3>
+            <span style="cursor: pointer;"><span id="link">Click Here</span></span>
+        </div>
+    </section>
+</body>
+</html>

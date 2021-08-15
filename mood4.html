@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood</title>
+    <link rel="stylesheet" href="mood.css">
+    <script type="text/javascript">
+        function myfunction()
+        {
+            var links =["https://www.youtube.com/watch?v=zzfREEPbUsA", "https://www.youtube.com/watch?v=ALZHF5UqnU4", "https://www.youtube.com/watch?v=_ovdm2yX4MA", "https://www.youtube.com/watch?v=6JnGBs88sL0"];
+            var random = Math.floor(Math.random() * 4);
+            var mylink = links[random].trim();
+            var element = document.getElementById("link");
+            element.innerHTML = "<a href = '"+mylink+"' target='_blank'>Click Here</a>";
+        }
+    </script>
+</head>
+<body onload="myfunction()">
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mood.html">Mood</a></li>
+            <li><a href="help.html">Proffesional help</a></li>
+            <li id="feedback"><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    <section class="content">        
+        <div class="moodbox" id="dull">
+            <h1>Here are some tips that will help you uplift your mood:</h1>
+            <ul style="text-align: left;">
+                <h3>
+                    <li>Cry; Forgive; Lear; Move on. Let your tears water the seed of your future happiness.</li>
+                    <li>Sooner or later we’ve all got to let go of our past.</li>
+                    <li>Love is only made more valuable by the risk of heartbreak.</li>
+                    <li>The emotion that breaks your heart is sometimes the very one that heals it.</li>                    
+            </h3>
+            </ul>
+        </div>
+        <div class="moodbox" style="text-align: center;">
+            <h3>Here is a link which would help you improve your mood:<br></h3>
+            <span style="cursor: pointer;"><span id="link">Click Here</span></span>
+        </div>
+    </section>
+</body>
+</html>

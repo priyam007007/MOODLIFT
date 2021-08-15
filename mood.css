@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+.navbar{
+    background-color:dodgerblue;
+    border-radius:30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    float: left;
+    list-style-type: none;
+    margin: 3px 7px;
+}
+.navbar li a{
+    color: white;
+    padding:2px 10px;
+    text-decoration: none;
+}
+.navbar li a:hover{
+    background-color: blue;
+    border-radius: 12px;
+}
+.content{
+     margin-top: 5px;
+    height: 900px;
+    border-radius: 44px;
+    background-color:#bdfffc;
+    background-image: url(https://images.unsplash.com/photo-1549890762-0a3f8933bc76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2035&q=80);
+    background-size: 100vw;
+}
+
+.container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1549890762-0a3f8933bc76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2035&q=80);
+    background-size: 100vw;
+}
+.box{
+    background-color: rgb(112, 153, 126);
+    border-radius: 20px;
+    height: min-content;
+    width: min-content;
+    margin:1rem;
+    padding:3px;
+    text-align: center; 
+}
+.box a{
+    text-decoration:none;
+    color: black;
+    background-color:rgb(220, 20, 20);
+    padding: .2rem;
+    border-radius: 9px;
+
+}
+.moodbox
+{
+    background-color: rgb(112, 153, 126);
+    border-radius: 5px;
+    width:100%;
+    text-align: center;
+}
+img
+{
+    border-radius: 20px;
+    height: min-content;
+    width: min-content;
+    margin:1rem;
+    
+}
