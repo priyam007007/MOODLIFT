@@ -2,8 +2,8 @@
  
 Team : SMC T-3
 
- - Ronak Sharma (Team Lead) 
- - Priyaranjan Mishra
+ - Ronak Sharma  
+ - Priyaranjan Mishra (Team Lead) 
  - Sujay Mahalle
  - Suryakant Patwardhan
 
